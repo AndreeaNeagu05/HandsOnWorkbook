@@ -5,17 +5,23 @@ import java.util.stream.Stream;
 
 public class Exercise11 {
     public static void main(String[] args) {
-       /* Stream.iterate(1, x -> x++)
-                .limit(5).map(x -> x)
-                .collect(Collectors.joining(",")); a - false*/
+       /* System.out.print(
+                Stream.iterate(1, x -> x++)
+                        .limit(5).map(x -> x)
+                        .collect(Collectors.joining(","))
+        ); a - false*/
 
-        /* Stream.iterate(1, x -> x++)
-                .limit(5).map(x -> "" + x)
-                .collect(Collectors.joining()); b - false*/
+       /* System.out.print(
+                Stream.iterate(1, x -> x++)
+                        .limit(5).map(x -> "" + x)
+                        .collect(Collectors.joining())
+        ); b - false*/
 
-        /* Stream.iterate(1, x -> ++x)
-                .limit(5).map(x -> x)
-                .collect(Collectors.joining()); c- false*/
+        /* System.out.print(
+                Stream.iterate(1, x -> ++x)
+                        .limit(5).map(x -> x)
+                        .collect(Collectors.joining())
+         ); c- false*/
 
         /* Stream.iterate(1, x -> x++)
                 .limit(5).map(x -> x)
